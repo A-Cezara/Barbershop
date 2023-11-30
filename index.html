@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BarberShop</title>
     <meta name="description" content="The Best Barbershop In Your City" />
     <meta name="keywords" content="Barbershop, hair, beard, haircuts" />
+    <title>BarberShop</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Hero section -->
@@ -22,6 +23,7 @@
           <ul>
             <li>
               <a
+                class="social-media-link"
                 href="https://Youtube.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -30,6 +32,7 @@
             </li>
             <li>
               <a
+                class="social-media-link"
                 href="https://Instagram.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -41,21 +44,27 @@
         </div>
       </div>
       <!-- Hero content -->
-      <div>
+      <div class="hero-content">
         <!-- Header -->
         <header>
           <nav>
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#prices">Services and Prices</a></li>
-              <li><a href="#barbers">Barbers</a></li>
-              <li><a href="#contacts">Contacts</a></li>
+              <li><a class="nav-about" href="#about">About</a></li>
+              <li>
+                <a class="nav-link" href="#prices">Services and Prices</a>
+              </li>
+              <li><a class="nav-link" href="#barbers">Barbers</a></li>
+              <li><a class="nav-link" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
           <address>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
+            <a class="address-phone-number" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
           </address>
-          <button type="button">book a Service</button>
+          <button class="book-service-button" type="button">
+            book a Service
+          </button>
         </header>
         <!-- Title -->
         <section>
@@ -251,6 +260,16 @@
           <a href="tel:+380441111111">+38 044 111 11 11</a> <br />
           <a href="mailto:barbershop@email.com">barbershop@email.com</a>
         </address>
+        <div>
+          <div>
+            <img src="images/divider.svg" alt="-" />
+            <h3>working hours</h3>
+          </div>
+          <p>
+            Daily from <time datetime="9:00AM">9:00AM</time> till
+            <time datetime="22:00PM">22:00 PM</time>
+          </p>
+        </div>
       </section>
     </main>
 
@@ -263,6 +282,7 @@
         <ul>
           <li>
             <a
+              class="social-media-link"
               href="https://Youtube.com"
               target="_blank"
               rel="noopener noreferrer nofollow"
@@ -271,6 +291,7 @@
           </li>
           <li>
             <a
+              class="social-media-link"
               href="https://Instagram.com"
               target="_blank"
               rel="noopener noreferrer nofollow"
