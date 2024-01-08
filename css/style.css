@@ -73,14 +73,33 @@ ul {
 }
 /* --------------------------------HERO CONTAINER------------------------------------------------------ */
 .hero-container {
-  background-image: url("../images/slider3.jpg");
+  /* background-image: url("../images/slider3.jpg"); */
   background-size: cover;
   color: var(--white);
   flex-grow: 1;
+
+  position: relative;
+}
+.hero-carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.hero-carousel-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-content-container {
+  z-index: 1;
   padding: 40px 55px 40px 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  height: 100%;
 }
 .hero-content > :nth-child(n + 2) {
   margin-top: 20px;
@@ -263,23 +282,6 @@ ul {
   align-self: flex-start;
   margin-top: 20px;
 }
-/* -------------------------------------------WHY US SECTION------------------------------------------- */
-/* -------------------------------------------------------------------------------------- */
-.why-us-cards {
-  --card-width: 170px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  max-width: calc(var(--card-width) * 2 + 30px);
-}
-.why-us-card {
-  flex-basis: var(--card-width);
-  height: 133px;
-  background-color: #f7f7f7;
-}
-.why-us-card-shifted {
-  margin-top: 30px;
-}
 /* -------------------------------------------SERVICES AND PRICES SECTION------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
 
@@ -330,15 +332,92 @@ ul {
   margin: auto;
   margin-top: 48px;
 }
+/* -------------------------------------------WHY US------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+.why-us {
+  height: 582px;
+  padding: 130px 155px;
+  display: flex;
+  gap: 130px;
+}
+.why-us-cards {
+  --card-width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  max-width: calc(var(--card-width) * 2 + 30px);
+}
+.why-us-card {
+  flex-basis: var(--card-width);
+  height: 133px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+}
+.why-us-card-shifted {
+  margin-top: 30px;
+}
+.why-us-card-title {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+.why-us-card-title > sup {
+  color: var(--brand-color);
+  font-size: 25px;
+  font-weight: 600;
+}
+.why-us-card-description {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+}
 /* -------------------------------------------OUR BARBERS------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
 .barbers {
   background-color: #f7f7f7;
+  height: 890px;
+  padding: 130px 55px;
 }
+.barbers-header {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
 .barbers-social-media-list {
   display: flex;
   gap: 10px;
   fill: var(--dark-color);
+  width: fit-content;
+  margin: 30px auto 0 auto;
+}
+.barbers-li-name {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.barbers-li-title {
+  color: var(--brand-color);
+  text-align: center;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin-top: 8px;
 }
 .barbers-social-media-icon {
   background-color: var(--white);
