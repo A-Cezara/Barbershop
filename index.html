@@ -57,7 +57,7 @@
                 >
               </li>
             </ul>
-            <svg width="60px" height="1px" class="divider-dark">
+            <svg width="px" class="divider-dark social-media-divider">
               <use href="./images/icons.svg#divider" />
             </svg>
           </div>
@@ -411,8 +411,8 @@
         </section>
 
         <!-- Portofolio section -->
-        <section>
-          <div class="subtitle-container">
+        <section class="portofolio">
+          <div class="subtitle-container portofolio-container">
             <svg width="60px" height="1px" class="divider-dark">
               <use href="./images/icons.svg#divider" />
             </svg>
@@ -420,7 +420,7 @@
               In Latin, &quot;barba&quot; means &quot;beard&quot;
             </h3>
           </div>
-          <ul>
+          <ul class="portofolio-list">
             <li>
               <img src="images/portofolio1.jpg" alt="haircut" width="270" />
             </li>
@@ -444,36 +444,54 @@
           </ul>
         </section>
 
-        <!-- Contacts -->
-        <section id="contacts" class="contact-section">
-          <h2 class="header header-white">Contacts</h2>
-          <address>
-            <span class="contact-address">
-              <svg height="24" width="24">
-                <use href="./images/icons.svg#location" />
-              </svg>
-              Main Street, 7A Kyiv, 08132</span
-            ><br />
-            <a href="tel:+380441111111">+38 044 111 11 11</a> <br />
-            <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-          </address>
-          <div>
-            <div class="subtitle-container">
-              <svg width="60px" height="1px" class="divider-gray">
-                <use href="./images/icons.svg#divider" />
-              </svg>
-              <h3 class="subtitle subtitle-gray">working hours</h3>
+        <div class="contact-container">
+          <!-- Book Service  -->
+          <section class="contact-book-service"></section>
+          <!-- Contacts -->
+          <section id="contacts" class="contact-section">
+            <h2 class="header header-white">Contacts</h2>
+            <address>
+              <span class="contact-address">
+                <svg class="contact-svg">
+                  <use href="./images/icons.svg#location" />
+                </svg>
+                Main Street, 7A Kyiv, 08132</span
+              ><br />
+              <a href="tel:+380441111111" class="contact-address">
+                <svg class="contact-svg">
+                  <use href="./images/icons.svg#phone" />
+                </svg>
+                +38 044 111 11 11
+              </a>
+              <br />
+              <a
+                href="mailto:barbershop@email.com"
+                class="contact-address contact-address-mail"
+              >
+                <svg class="contact-svg">
+                  <use href="./images/icons.svg#mail" />
+                </svg>
+                barbershop@email.com</a
+              >
+            </address>
+            <div>
+              <div class="subtitle-container">
+                <svg width="60px" height="1px" class="divider-gray">
+                  <use href="./images/icons.svg#divider" />
+                </svg>
+                <h3 class="subtitle subtitle-gray">working hours</h3>
+              </div>
+              <p class="contact-address">
+                Daily from <time datetime="9:00AM">9:00AM</time> till
+                <time datetime="22:00PM">22:00 PM</time>
+              </p>
             </div>
-            <p>
-              Daily from <time datetime="9:00AM">9:00AM</time> till
-              <time datetime="22:00PM">22:00 PM</time>
-            </p>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
 
       <!-- Footer -->
-      <footer>
+      <footer class="footer">
         <p>&copy; Copyright 2022</p>
         <!-- Social media links -->
         <div>
