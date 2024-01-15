@@ -446,7 +446,39 @@
 
         <div class="contact-container">
           <!-- Book Service  -->
-          <section class="contact-book-service"></section>
+          <section class="contact-book-service">
+            <h2 class="header header-white">Book a Service</h2>
+            <form action="" autocomplete="off" class="contact-form">
+              <div class="contact-form-input">
+                <input
+                  type="text"
+                  placeholder="Name*"
+                  required
+                  name="Name"
+                  class="contact-form-element"
+                />
+                <input
+                  type="tel"
+                  placeholder="Telephone*"
+                  required
+                  name="Telephone"
+                  class="contact-form-element"
+                />
+              </div>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message"
+                class="contact-form-element contact-form-text"
+              ></textarea>
+              <button
+                class="book-service-button book-service-button-white"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </section>
           <!-- Contacts -->
           <section id="contacts" class="contact-section">
             <h2 class="header header-white">Contacts</h2>
@@ -492,13 +524,13 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <p>&copy; Copyright 2022</p>
+        <p class="footer-copy">&copy; Copyright 2022</p>
         <!-- Social media links -->
-        <div>
+        <div class="footer-social-container">
           <svg width="60px" height="1px" class="divider-dark">
             <use href="./images/icons.svg#divider" />
           </svg>
-          <ul>
+          <ul class="footer-social">
             <li>
               <a
                 class="social-media-link"

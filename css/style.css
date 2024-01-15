@@ -176,7 +176,8 @@ ul {
   cursor: pointer;
   border: 1px solid var(--brand-color);
   border-radius: 25px;
-  padding: 12px 24px;
+  padding: 12px 0px;
+  width: 160px;
 }
 .book-service-button-white {
   color: var(--white);
@@ -467,6 +468,7 @@ ul {
 .contact-book-service {
   width: 55%;
   background-color: #191c26;
+  padding: 13px 40px 0 55px;
 }
 .contact-section {
   background-image: linear-gradient(
@@ -500,9 +502,66 @@ ul {
 .contact-address-mail {
   text-decoration: underline;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 44px;
+}
+.contact-form-element {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
+  color: var(--white);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+.contact-form-element::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+.contact-form-element:hover,
+.contact-form-element:focus {
+  outline: none;
+  border-bottom: 1px solid var(--white);
+}
+.contact-form-element:hover::placeholder,
+.contact-form-element:focus::placeholder {
+  color: var(--white);
+}
+.contact-form-input {
+  display: flex;
+  gap: 30px;
+}
+.contact-form-input > * {
+  flex-grow: 1;
+}
+.contact-form-text {
+  resize: none;
+}
 /* -------------------------------------------FOOTER------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
 .footer {
   display: flex;
   justify-content: space-between;
+  padding: 55px;
+}
+.footer-social {
+  display: flex;
+  gap: 40px;
+  margin-left: 40px;
+}
+.footer-social-container {
+  display: flex;
+  align-items: center;
+}
+.footer-copy {
+  color: #9da4bd;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
 }
