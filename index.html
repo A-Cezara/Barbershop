@@ -87,28 +87,45 @@
           <!-- Header -->
           <div class="hero-content-container">
             <header class="hero-header">
-              <nav class="hero-navbar">
-                <ul class="hero-navbar-list">
-                  <li><a class="nav-link" href="#about">About</a></li>
-                  <li>
-                    <a class="nav-link" href="#prices">Services and Prices</a>
-                  </li>
-                  <li><a class="nav-link" href="#barbers">Barbers</a></li>
-                  <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                </ul>
-              </nav>
-              <div class="hero-header-cta">
-                <address class="hero-header-address">
-                  <a class="address-phone-number" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
-                  >
-                </address>
-                <button
-                  class="book-service-button book-service-button-white"
-                  type="button"
-                >
-                  book a Service
+              <a href="index.html" class="hero-phone-logo">
+                <svg width="69px" height="56px">
+                  <use href="./images/icons.svg#logo" />
+                </svg>
+              </a>
+              <button class="hero-hamburger-menu" data-menu-open>
+                <svg width="40px" height="40px">
+                  <use href="./images/icons.svg#hamburger-menu" />
+                </svg>
+              </button>
+              <div class="hero-navbar-menu" data-menu>
+                <button class="hero-hamburger-menu-close" data-menu-close>
+                  <svg width="40px" height="40px">
+                    <use href="./images/icons.svg#close-button" />
+                  </svg>
                 </button>
+                <nav class="hero-navbar">
+                  <ul class="hero-navbar-list">
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li>
+                      <a class="nav-link" href="#prices">Services and Prices</a>
+                    </li>
+                    <li><a class="nav-link" href="#barbers">Barbers</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="hero-header-cta">
+                  <address class="hero-header-address">
+                    <a class="address-phone-number" href="tel:+380441111111"
+                      >+38 044 111 11 11</a
+                    >
+                  </address>
+                  <button
+                    class="book-service-button hero-book-service-button"
+                    type="button"
+                  >
+                    book a Service
+                  </button>
+                </div>
               </div>
             </header>
             <!--------------------------- Title --------------------------->
@@ -153,12 +170,18 @@
         <!------------------------------ About section ------------------------------>
         <!-------------------------------------------------------------------------->
         <section id="about" class="about">
-          <img
-            src="images/aboutImg1.jpg"
-            alt="barber trims beard"
-            width="270"
-          />
-          <img src="images/aboutImg2.jpg" alt="barber cuts hair" width="270" />
+          <div class="about-images-container">
+            <img
+              src="images/aboutImg1.jpg"
+              alt="barber trims beard"
+              class="about-image"
+            />
+            <img
+              src="images/aboutImg2.jpg"
+              alt="barber cuts hair"
+              class="about-image"
+            />
+          </div>
 
           <div class="about-content">
             <div class="subtitle-container">
@@ -276,7 +299,7 @@
               <p class="why-us-card-description">Gifts for Regular Customers</p>
             </li>
           </ul>
-          <div>
+          <div class="why-us-title-container">
             <div class="subtitle-container">
               <svg width="60px" height="1px" class="divider-dark">
                 <use href="./images/icons.svg#divider" />
@@ -447,7 +470,7 @@
         <div class="contact-container">
           <!-- Book Service  -->
           <section class="contact-book-service">
-            <h2 class="header header-white">Book a Service</h2>
+            <h2 class="header header-white center-header">Book a Service</h2>
             <form action="" autocomplete="off" class="contact-form">
               <div class="contact-form-input">
                 <input
@@ -472,7 +495,7 @@
                 class="contact-form-element contact-form-text"
               ></textarea>
               <button
-                class="book-service-button book-service-button-white"
+                class="book-service-button book-service-button-white contact-submit-button"
                 type="submit"
               >
                 Send
@@ -481,42 +504,44 @@
           </section>
           <!-- Contacts -->
           <section id="contacts" class="contact-section">
-            <h2 class="header header-white">Contacts</h2>
-            <address>
-              <span class="contact-address">
-                <svg class="contact-svg">
-                  <use href="./images/icons.svg#location" />
-                </svg>
-                Main Street, 7A Kyiv, 08132</span
-              ><br />
-              <a href="tel:+380441111111" class="contact-address">
-                <svg class="contact-svg">
-                  <use href="./images/icons.svg#phone" />
-                </svg>
-                +38 044 111 11 11
-              </a>
-              <br />
-              <a
-                href="mailto:barbershop@email.com"
-                class="contact-address contact-address-mail"
-              >
-                <svg class="contact-svg">
-                  <use href="./images/icons.svg#mail" />
-                </svg>
-                barbershop@email.com</a
-              >
-            </address>
-            <div>
-              <div class="subtitle-container">
-                <svg width="60px" height="1px" class="divider-gray">
-                  <use href="./images/icons.svg#divider" />
-                </svg>
-                <h3 class="subtitle subtitle-gray">working hours</h3>
+            <h2 class="header header-white center-header">Contacts</h2>
+            <div class="contacts-information-container">
+              <address>
+                <span class="contact-address">
+                  <svg class="contact-svg">
+                    <use href="./images/icons.svg#location" />
+                  </svg>
+                  Main Street, 7A Kyiv, 08132</span
+                ><br />
+                <a href="tel:+380441111111" class="contact-address">
+                  <svg class="contact-svg">
+                    <use href="./images/icons.svg#phone" />
+                  </svg>
+                  +38 044 111 11 11
+                </a>
+                <br />
+                <a
+                  href="mailto:barbershop@email.com"
+                  class="contact-address contact-address-mail"
+                >
+                  <svg class="contact-svg">
+                    <use href="./images/icons.svg#mail" />
+                  </svg>
+                  barbershop@email.com</a
+                >
+              </address>
+              <div>
+                <div class="subtitle-container">
+                  <svg width="60px" height="1px" class="divider-gray">
+                    <use href="./images/icons.svg#divider" />
+                  </svg>
+                  <h3 class="subtitle subtitle-gray">working hours</h3>
+                </div>
+                <p class="contact-address">
+                  Daily from <time datetime="9:00AM">9:00AM</time> till
+                  <time datetime="22:00PM">22:00 PM</time>
+                </p>
               </div>
-              <p class="contact-address">
-                Daily from <time datetime="9:00AM">9:00AM</time> till
-                <time datetime="22:00PM">22:00 PM</time>
-              </p>
             </div>
           </section>
         </div>
